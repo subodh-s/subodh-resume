@@ -1,33 +1,64 @@
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f3f3;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
-.container {
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+.resume {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 header {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 30px;
 }
+
 h1 {
-    margin-bottom: 5px;
+  margin: 0;
+  color: #004080;
 }
+
 h2 {
-    color: #333366;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 5px;
+  margin-top: 40px;
 }
-p, ul {
-    line-height: 1.6;
+
+h3 {
+  color: #333;
+  margin-bottom: 5px;
 }
+
 a {
-    color: #0066cc;
-    text-decoration: none;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul.multi-column {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.profile-pic {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.profile-pic img {
+  border-radius: 50%;
+  border: 4px solid #004080;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
