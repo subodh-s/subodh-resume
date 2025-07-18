@@ -6,87 +6,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Subodh Shetty - Resume</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="resume">
-    <div class="profile-pic"><img src="profile.jpg" alt="Profile Photo"></div>
-    <header>
+  <div class="resume-container">
+    <aside class="sidebar">
+      
+    <img src="profile.jpg" alt="Profile Photo" class="profile-img"/>
+    <div class="basic-info">
       <h1>Subodh Shetty</h1>
-      <h3>Engineering Manager | Pune, Maharashtra</h3>
-      <p>Email: <a href="mailto:subodh.shetty87@gmail.com">subodh.shetty87@gmail.com</a> | Phone: +91-9619712562</p>
-      <p>
-        <a href="http://linkedin.com/in/subodhsh">LinkedIn</a> |
-        <a href="http://medium.com/@subodh.shetty87">Medium</a> |
-        <a href="https://github.com/subodh-s">GitHub</a>
-      </p>
-    </header>
+      <h3>Engineering Manager</h3>
+      <p>Pune, Maharashtra</p>
+      <hr class="divider" />
+    </div>
+    <div class="email-block">
+      <p><a href="mailto:subodh.shetty87@gmail.com">subodh.shetty87@gmail.com</a></p>
+    </div>
+    
+      
+      <div class="links">
+        <a href="http://linkedin.com/in/subodhsh" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="http://medium.com/@subodh.shetty87" target="_blank"><i class="fab fa-medium"></i></a>
+        <a href="https://github.com/subodh-s" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
 
-    <section>
-      <h2>Profile</h2>
-      <p>Technical people leader with 17+ years of experience. Strong background in AWS Cloud, Data Engineering (Spark, Delta Lake), Microservices, System Design, and Frontend/Backend Development.</p>
-    </section>
-
-    <section>
       <h2>Skills</h2>
-      <ul class="multi-column">
+      <div class="skills-pills">
         <li>AWS Cloud Architecture</li>
-        <li>Terraform</li>
-        <li>Java / Spring Boot</li>
-        <li>ReactJS / NodeJS</li>
+        <li>Java, Spring Boot</li>
+        <li>ReactJS, NodeJS</li>
         <li>MySQL / MSSQL</li>
-        <li>Apache Spark</li>
-        <li>Apache Kafka</li>
-        <li>Apache Airflow</li>
+        <li>Apache Spark, Kafka</li>
+        <li>Airflow, Jenkins</li>
+        <li>Grafana, Prometheus</li>
         <li>GitLab CI/CD</li>
-        <li>Jenkins, Grafana, Prometheus</li>
-      </ul>
-    </section>
+        <li>Terraform</li>
+      </div>
 
-    <section>
       <h2>Certifications</h2>
-      <ul>
+      <ul class="no-bullets">
         <li>AWS Certified Solutions Architect</li>
         <li>Professional Scrum Master</li>
       </ul>
-    </section>
 
-    <section>
-      <h2>Work Experience</h2>
-      <h3>Nielsen — Engineering Manager (Sep 2017 – Present)</h3>
-      <ul>
-        <li>Led migration of high-traffic public site (3M hits/day) across AWS accounts</li>
-        <li>Built Delta Lake pipelines with Spark + Glue</li>
-        <li>Managed hiring and mentoring of engineering teams</li>
-      </ul>
-
-      <h3>Bigtree Entertainment — Assistant Engineering Manager (Jan 2014 – Sep 2017)</h3>
-      <ul>
-        <li>Built internal accounting module for BookMyShow</li>
-        <li>Led team of 4 developers; part of interview panel</li>
-      </ul>
-
-      <h3>Idealake Technologies — Team Lead (Aug 2011 – Dec 2013)</h3>
-      <ul>
-        <li>Led client projects, onsite/offsite</li>
-        <li>Negotiated SLAs and ensured client satisfaction</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Gracenoteview.com:</strong> SaaS app with ReactJS, NodeJS, Kubernetes</li>
-        <li><strong>Zap2it:</strong> High-traffic US/Canada site on AWS</li>
-        <li><strong>Delta Lake Pipeline:</strong> Spark + EMR for data integration</li>
-        <li><strong>Entitlement Tool:</strong> Access control system with Kafka, S3, Lambda</li>
-        <li><strong>Catapult Navigator:</strong> 8 TB metadata search for CX teams</li>
-      </ul>
-    </section>
-
-    <section>
       <h2>Education</h2>
       <p>Nagpur University – B.E. (2004 – 2008)</p>
-    </section>
+    </aside>
+
+    <main class="main-content">
+<button class="download-btn" onclick="window.print()">Download as PDF</button>
+      <section>
+        <h2><i class="fas fa-user"></i> Profile</h2>
+        <p>Technical people leader with 17+ years of experience. Strong background in AWS Cloud, Data Engineering (Spark, Delta Lake), Microservices, System Design, and Full-stack Development.</p>
+      </section>
+
+      <section>
+        
+<h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+<div class="timeline">
+  <div class="timeline-entry">
+    <h3>Nielsen (Sep 2017 – Present)</h3>
+    <ul>
+      <li>Migrated high-traffic public site (3M hits/day) across AWS accounts</li>
+      <li>Built Delta Lake pipelines using Spark & AWS Glue</li>
+      <li>Led product roadmap planning and hiring</li>
+    </ul>
+  </div>
+  <div class="timeline-entry">
+    <h3>Bigtree Entertainment (2014 – 2017)</h3>
+    <ul>
+      <li>Led development of internal accounting modules for BookMyShow</li>
+      <li>Managed a 4-member dev team and interview panel</li>
+    </ul>
+  </div>
+  <div class="timeline-entry">
+    <h3>Idealake Technologies (2011 – 2013)</h3>
+    <ul>
+      <li>Handled offsite/onsite delivery and client relationships</li>
+    </ul>
+  </div>
+</div>
+
+<section>
+        
+<h2><i class="fas fa-lightbulb"></i> Projects</h2>
+<div class="project-card">
+  <strong>Gracenoteview.com:</strong> SaaS app with ReactJS, NodeJS, Kubernetes
+</div>
+<div class="project-card">
+  <strong>Zap2it:</strong> High-traffic US/Canada site on AWS
+</div>
+<div class="project-card">
+  <strong>Data Pipeline:</strong> Spark + EMR for data integration
+</div>
+<div class="project-card">
+  <strong>Entitlement Tool:</strong> Access control system with Kafka, S3, Lambda
+</div>
+<div class="project-card">
+  <strong>Catapult Navigator:</strong> 8 TB metadata search for CX teams
+</div>
+
+</section>
+      </section>
+    </main>
   </div>
 </body>
 </html>
