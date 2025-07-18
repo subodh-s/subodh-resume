@@ -880,3 +880,9 @@ body.dark-mode .dark-mode-toggle label {
 body.dark-mode .dark-toggle {
   color: white;
 }
+
+@media print {
+  .dark-toggle {
+    display: none !important;
+  }
+}
