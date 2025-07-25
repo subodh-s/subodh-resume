@@ -1115,37 +1115,38 @@ body.dark-mode .profile-articles a:hover {
 }
 
 .profile-title {
-  font-size: 1.15em;
-  font-weight: bold;
+  font-size: 1.05em;
+  font-weight: 500;
   font-style: normal;
-  color: #fff;
-  background: linear-gradient(90deg, #007BFF 60%, #aad8ff 100%);
-  padding: 4px 16px 4px 32px;
-  border-radius: 18px;
+  color: #00e5ff;
+  background: none;
+  border-left: 3px solid #00e5ff;
+  padding: 2px 0 2px 28px;
+  border-radius: 0;
   margin: 6px 0 10px 0;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
   position: relative;
   display: inline-block;
-  box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+  box-shadow: none;
 }
 .profile-title::before {
   content: '\f304'; /* fa-pen-nib FontAwesome */
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
-  color: #fff;
+  color: #aad8ff;
   position: absolute;
-  left: 10px;
+  left: 6px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.1em;
+  font-size: 0.95em;
+  opacity: 0.7;
 }
 body.dark-mode .profile-title {
-  background: linear-gradient(90deg, #1976d2 60%, #90caf9 100%);
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(144,202,249,0.12);
+  color: #00e5ff;
+  border-left: 3px solid #00e5ff;
 }
 body.dark-mode .profile-title::before {
-  color: #fff;
+  color: #90caf9;
 }
 
 /* Consistent section spacing for main content */
