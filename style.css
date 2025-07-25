@@ -197,6 +197,7 @@ ul.no-bullets {
   margin-left: 20px;
   border-left: 2px solid #004080;
   padding-left: 20px;
+  margin-bottom: 40px
 }
 
 .timeline h3 {
@@ -884,5 +885,333 @@ body.dark-mode .dark-toggle {
 @media print {
   .dark-toggle {
     display: none !important;
+  }
+}
+
+/* Project Card Details Styling */
+.project-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+}
+.project-role, .project-dates {
+  font-size: 0.95em;
+  color: #666;
+  margin-left: 4px;
+  font-weight: normal;
+}
+.project-desc {
+  margin-bottom: 6px;
+  font-size: 1em;
+  color: #222;
+}
+.project-tech {
+  font-size: 0.95em;
+  color: #004080;
+  margin-bottom: 16px;
+  margin-top: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.project-highlights {
+  margin: 0 0 0 18px;
+  padding: 0 0 0 16px;
+  font-size: 0.97em;
+  color: #333;
+  list-style: disc inside;
+}
+.project-highlights li {
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+body.dark-mode .project-desc,
+body.dark-mode .project-highlights,
+body.dark-mode .project-title,
+body.dark-mode .project-tech {
+  color: #e0e0e0 !important;
+}
+body.dark-mode .project-tech {
+  color: #90caf9 !important;
+}
+
+/* Collapsible Project Panel Styles */
+.collapsible-project {
+  margin-bottom: 18px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  background: #fff;
+  transition: box-shadow 0.2s;
+}
+.collapsible-project .project-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 8px 8px 0 0;
+  background: #f7faff;
+  font-size: 1.08em;
+  font-weight: 500;
+  outline: none;
+  user-select: none;
+  transition: background 0.2s;
+}
+.collapsible-project .project-header:focus, .collapsible-project .project-header:hover {
+  background: #e3f0ff;
+}
+.collapsible-project .collapse-arrow {
+  margin-left: auto;
+  font-size: 1.2em;
+  color: #004080;
+  transition: transform 0.2s;
+}
+.collapsible-project .project-link {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.collapsible-project .project-link:hover {
+  color: #007BFF;
+  text-decoration: underline;
+}
+.collapsible-project .project-body {
+  padding: 14px 22px 16px 22px;
+  border-top: 1px solid #e0e0e0;
+  background: #fafbfc;
+  display: none;
+  animation: fadeInPanel 0.3s;
+}
+@keyframes fadeInPanel {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+body.dark-mode .collapsible-project {
+  background: #181c22;
+  border-color: #333;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.18);
+}
+body.dark-mode .collapsible-project .project-header {
+  background: #23272f;
+  color: #e0e0e0;
+}
+body.dark-mode .collapsible-project .project-header:focus, 
+body.dark-mode .collapsible-project .project-header:hover {
+  background: #2a3140;
+}
+body.dark-mode .collapsible-project .collapse-arrow {
+  color: #90caf9;
+}
+body.dark-mode .collapsible-project .project-link {
+  color: #90caf9;
+}
+body.dark-mode .collapsible-project .project-link:hover {
+  color: #fff;
+}
+body.dark-mode .collapsible-project .project-body {
+  background: #23272f;
+  border-top: 1px solid #333;
+}
+
+@media print {
+  .collapsible-project .project-body {
+    display: block !important;
+    animation: none !important;
+    padding: 14px 22px 16px 22px !important;
+  }
+  .collapsible-project .collapse-arrow {
+    display: none !important;
+  }
+  .collapsible-project .project-header {
+    cursor: default !important;
+    background: #f7faff !important;
+    box-shadow: none !important;
+    color: #000 !important;
+  }
+}
+
+/* Prevent orphaned section headers for print/PDF */
+@media print {
+  .main-content h2, .main-content section h2, .main-content .side-projects-header {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    break-after: avoid;
+    break-inside: avoid;
+  }
+  .side-projects-header, .side-projects-section {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    break-after: avoid;
+    break-inside: avoid;
+  }
+  .collapsible-project {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .main-content h2 i.fa-lightbulb, .main-content section h2 i.fa-lightbulb, .main-content h2.fa-lightbulb, .main-content section h2.fa-lightbulb {
+    margin-top: 64px !important;
+    display: block;
+  }
+  .main-content h2.fa-lightbulb, .main-content section h2.fa-lightbulb, .main-content h2 i.fa-lightbulb, .main-content section h2 i.fa-lightbulb {
+    margin-top: 64px !important;
+  }
+  .main-content h2, .main-content section h2 {
+    margin-top: 64px !important;
+  }
+}
+
+/* Profile Articles Styling */
+.profile-articles {
+  margin: 12px 0 0 0;
+  padding: 12px 0 12px 18px;
+  border-left: 3px solid #aad8ff;
+  background: #f8fbff;
+  border-radius: 0 6px 6px 0;
+  list-style: none;
+}
+.profile-articles li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 28px;
+  font-size: 1em;
+}
+.profile-articles li::before {
+  content: '\f1ea'; /* fa-newspaper-o (FontAwesome) */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: #004080;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 1.1em;
+}
+.profile-articles a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.profile-articles a:hover {
+  color: #007BFF;
+  text-decoration: underline;
+}
+body.dark-mode .profile-articles {
+  background: #23272f;
+  border-left: 3px solid #90caf9;
+}
+body.dark-mode .profile-articles li::before {
+  color: #90caf9;
+}
+body.dark-mode .profile-articles a {
+  color: #90caf9;
+}
+body.dark-mode .profile-articles a:hover {
+  color: #fff;
+}
+
+.profile-title {
+  font-size: 1.15em;
+  font-weight: bold;
+  font-style: normal;
+  color: #fff;
+  background: linear-gradient(90deg, #007BFF 60%, #aad8ff 100%);
+  padding: 4px 16px 4px 32px;
+  border-radius: 18px;
+  margin: 6px 0 10px 0;
+  letter-spacing: 0.3px;
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+}
+.profile-title::before {
+  content: '\f304'; /* fa-pen-nib FontAwesome */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1em;
+}
+body.dark-mode .profile-title {
+  background: linear-gradient(90deg, #1976d2 60%, #90caf9 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(144,202,249,0.12);
+}
+body.dark-mode .profile-title::before {
+  color: #fff;
+}
+
+/* Consistent section spacing for main content */
+.main-content section {
+  margin-top: 48px;
+}
+.main-content section:first-of-type {
+  margin-top: 0;
+}
+
+/* Align section icon and title on the same line */
+.main-content h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media print {
+  .main-content h2, .main-content section h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .main-content h2 i, .main-content section h2 i {
+    font-size: 1.2em;
+    line-height: 1;
+    position: relative;
+    top: 3px;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar, .main-content {
+    padding: 10px;
+  }
+  .sidebar .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-content h1, .sidebar h1 {
+    font-size: 1.2em;
+  }
+  .main-content h2, .sidebar h2 {
+    font-size: 1em;
+  }
+  .project-card, .collapsible-project {
+    padding: 8px 4px;
+    font-size: 0.95em;
+  }
+  .skills-pills li {
+    font-size: 0.8em;
+    padding: 4px 8px;
+  }
+  .profile-title {
+    font-size: 1em;
+    padding: 3px 10px 3px 28px;
+  }
+  .profile-articles {
+    padding-left: 8px;
+    font-size: 0.95em;
+  }
+  .download-btn {
+    font-size: 0.8em;
+    padding: 6px 10px;
+    top: 10px;
+    right: 10px;
   }
 }
